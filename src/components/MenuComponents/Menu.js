@@ -13,17 +13,11 @@ const GET_MENU = graphql`
         node {
           name
           price
+          ingredients
           category {
             childContentfulCategoryTitleTextNode {
               internal {
                 content
-              }
-            }
-          }
-          ingredients {
-            content {
-              content {
-                value
               }
             }
           }
@@ -46,7 +40,7 @@ export default class Menu extends Component {
         <StaticQuery
           query={GET_MENU}
           render={data => {
-            const menuItems = data.menu.edges
+            const menuItems = data.menuItems.edges
             return <MenuItemsContainer menuItems={menuItems} />
           }}
         />
