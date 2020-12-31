@@ -13,7 +13,20 @@ const GET_MENU = graphql`
         node {
           name
           price
-          ingredients
+          category {
+            childContentfulCategoryTitleTextNode {
+              internal {
+                content
+              }
+            }
+          }
+          ingredients {
+            content {
+              content {
+                value
+              }
+            }
+          }
           image {
             fixed(height: 150, width: 150) {
               ...GatsbyContentfulFixed_tracedSVG

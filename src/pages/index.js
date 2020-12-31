@@ -48,8 +48,8 @@ const BannerButtonWrapper = styled.div`
   justify-content: center;
 `
 
-const ButtonWrapper = styled.button`
-  background: blue;
-  color: white;
-`
+// const ButtonWrapper = styled.button`
+//   background: blue;
+//   color: white;
+// `
 export default IndexPage

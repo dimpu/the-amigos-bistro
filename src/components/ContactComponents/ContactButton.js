@@ -8,6 +8,7 @@ export default function ContactButton() {
   return (
     <ButtonWrapper>
       <a
+        rel="noreferrer"
         style={{ textDecoration: "none" }}
         href="https://www.yelp.com"
         target="_blank"

@@ -5,7 +5,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { PageHeader, SectionButton, Banner, Title, Section } from "../utils"
+import { PageHeader, Banner, Title, Section } from "../utils"
 
 import contactImage from "../images/bcg/contactBcg.jpeg"
 

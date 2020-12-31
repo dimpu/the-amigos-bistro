@@ -3,7 +3,6 @@ import React, { Component } from "react"
 import styled from "styled-components"
 
 import {
-  SectionButton,
   MenuButton,
   Product,
   ProductList,
@@ -22,8 +21,10 @@ const getCategories = items => {
         if (tempCategories.indexOf(cat) < 0) {
           tempCategories.push(cat)
         }
+        return cat;
       })
     }
+    return item;
   })
   let categories = Array.from(tempCategories)
   categories = ["all", ...categories]

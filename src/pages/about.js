@@ -1,10 +1,10 @@
 import React from "react"
 
-import styled from "styled-components"
+// import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { styles, PageHeader, Banner, Title, Section } from "../utils"
+import {  PageHeader, Banner, Title, Section } from "../utils"
 
 import aboutImage from "../images/bcg/aboutBcg.jpeg"
 

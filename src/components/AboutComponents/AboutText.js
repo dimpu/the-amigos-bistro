@@ -1,6 +1,6 @@
 import React from "react"
 
-import { styles, Section, SectionButton } from "../../utils"
+import { styles  } from "../../utils"
 
 import styled from "styled-components"
 

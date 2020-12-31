@@ -10,18 +10,33 @@ import {
   ProductList,
 } from "../../utils"
 
-import styled from "styled-components"
+// import styled from "styled-components"
 
 const PRODUCTS = graphql`
   {
-    items: allContentfulMenu {
+    items:   allContentfulMenu {
+      totalCount
       edges {
         node {
           name
+          id
           price
-          ingredients
+          category {
+            childContentfulCategoryTitleTextNode {
+              internal {
+                content
+              }
+            }
+          }
+          ingredients {
+            content {
+              content {
+                value
+              }
+            }
+          }
           image {
-            fixed(height: 150, width: 150) {
+            fixed(width: 150, height:150) {
               ...GatsbyContentfulFixed_tracedSVG
             }
           }
@@ -30,6 +45,21 @@ const PRODUCTS = graphql`
     }
   }
 `
+
+// items: allContentfulMenu {
+//   edges {
+//     node {
+//       name
+//       price
+//       ingredients
+//       image {
+//         fixed(height: 150, width: 150) {
+//           ...GatsbyContentfulFixed_tracedSVG
+//         }
+//       }
+//     }
+//   }
+// }
 
 export default function Menu() {
   return (
