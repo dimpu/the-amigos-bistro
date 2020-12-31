@@ -14,7 +14,7 @@ import styled from "styled-components"
 
 const PRODUCTS = graphql`
   {
-    items: allContentfulFeaturedItems {
+    items: allContentfulMenu {
       edges {
         node {
           name

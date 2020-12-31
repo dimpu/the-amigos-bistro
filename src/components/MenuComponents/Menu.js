@@ -1,14 +1,14 @@
 import React, { Component } from "react"
 
 import { StaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
+// import styled from "styled-components"
 import { Section, Title } from "../../utils"
 
 import MenuItemsContainer from "./MenuItemsContainer"
 
 const GET_MENU = graphql`
   {
-    menuItems: allContentfulMenuItem {
+    menuItems: allContentfulMenu {
       edges {
         node {
           name
@@ -19,7 +19,6 @@ const GET_MENU = graphql`
               ...GatsbyContentfulFixed_tracedSVG
             }
           }
-          categoryList
         }
       }
     }
@@ -34,7 +33,7 @@ export default class Menu extends Component {
         <StaticQuery
           query={GET_MENU}
           render={data => {
-            const menuItems = data.menuItems.edges
+            const menuItems = data.menu.edges
             return <MenuItemsContainer menuItems={menuItems} />
           }}
         />
@@ -43,4 +42,4 @@ export default class Menu extends Component {
   }
 }
 
-const MenuItemWrapper = styled.div``
+// const MenuItemWrapper = styled.div``
