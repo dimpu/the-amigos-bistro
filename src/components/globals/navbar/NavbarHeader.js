@@ -14,7 +14,7 @@ export default class NavbarHeader extends Component {
     return (
       <HeaderWrapper>
         <Link to="/">
-          <img src={logo} alt="Eatery Logo" />
+          <div className="logo">AMIGOS BISTRO</div>
         </Link>
         <FaAlignRight
           className="toggle-icon"
@@ -32,7 +32,13 @@ const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  .logo {
+    border: 4px solid rgb(38, 38, 38);
+    color: rgb(38, 38, 38);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 15px;
+  }
   .toggle-icon {
     font-size: 1.75rem;
     color: ${styles.colors.mainYellow};

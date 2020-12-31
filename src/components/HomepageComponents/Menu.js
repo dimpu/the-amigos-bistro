@@ -14,7 +14,7 @@ import {
 
 const PRODUCTS = graphql`
   {
-    items:   allContentfulMenu {
+    items: allContentfulMenu {
       totalCount
       edges {
         node {
@@ -40,20 +40,6 @@ const PRODUCTS = graphql`
   }
 `
 
-// items: allContentfulMenu {
-//   edges {
-//     node {
-//       name
-//       price
-//       ingredients
-//       image {
-//         fixed(height: 150, width: 150) {
-//           ...GatsbyContentfulFixed_tracedSVG
-//         }
-//       }
-//     }
-//   }
-// }
 
 export default function Menu() {
   return (

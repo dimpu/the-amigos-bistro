@@ -3,9 +3,9 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `Eatery`,
-    description: `Restaurant Website built with GatsbyJS`,
-    author: `Michael Claus`,
+    title: `AMIGOS BISTRO`,
+    description: `Eat. Drink. Relax.`,
+    author: `Dimpu`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
